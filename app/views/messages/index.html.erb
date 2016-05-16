@@ -21,16 +21,16 @@
             
             <%= form_for(@message, html: {class:"form-horizontal"}) do |f| %>
                 <div class="form-group">
-                    <label class="col-md-3" for="message_name"></label>
+                    <label class="col-md-3" for="message_name">名前：</label>
                     <div class="col-md-9">
-                        名前：<%= f.text_field :name, class:"form-control" %>
+                        <%= f.text_field :name, class:"form-control" %>
                     </div>
                 </div>
             
                 <div class="form-group">
-                    <label class="col-md-3" for="message_body"></label>
+                    <label class="col-md-3" for="message_body">内容：</label>
                     <div class="col-md-9">
-                        内容：<%= f.text_area :body, class:"form-control", rows:"3" %>
+                        <%= f.text_area :body, class:"form-control", rows:"3" %>
                     </div>
                 </div>
                 <div class="form-group">
