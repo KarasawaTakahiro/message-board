@@ -44,7 +44,7 @@ class MessagesController < ApplicationController
     def message_params
         # 引数チェック
         # paramsに:messageがあって、キーが:nameと:bodyの値だけ受け取る
-        params.require(:message).permit(:name, :body)
+        params.require(:message).permit(:name, :body, :age)
     end
 
     def set_message
